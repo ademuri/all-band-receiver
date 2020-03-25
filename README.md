@@ -2,6 +2,8 @@
 
 PCB for the audio amplifier IC-version of the [Techlib Amazing All-Band Receiver](http://www.techlib.com/electronics/allband.htm).
 
+"This is not an officially supported Google product"
+
 ## Calculations
 
 ### SMPS
