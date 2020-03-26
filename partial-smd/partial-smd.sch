@@ -1,0 +1,267 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LF90_TO220 U?
+U 1 1 5E7DBDCC
+P 6350 4950
+F 0 "U?" H 6350 5192 50  0000 C CNN
+F 1 "LF90_TO220" H 6350 5101 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6350 5175 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf" H 6350 4900 50  0001 C CNN
+	1    6350 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E7DDD45
+P 5800 5150
+F 0 "C?" H 5915 5196 50  0000 L CNN
+F 1 "0.1uF" H 5915 5105 50  0000 L CNN
+F 2 "" H 5838 5000 50  0001 C CNN
+F 3 "~" H 5800 5150 50  0001 C CNN
+	1    5800 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4950 5800 4950
+Wire Wire Line
+	5800 4950 5800 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5E7DEB63
+P 5800 5300
+F 0 "#PWR?" H 5800 5050 50  0001 C CNN
+F 1 "GND" H 5805 5127 50  0000 C CNN
+F 2 "" H 5800 5300 50  0001 C CNN
+F 3 "" H 5800 5300 50  0001 C CNN
+	1    5800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E7DED5C
+P 5100 5150
+F 0 "C?" H 5215 5196 50  0000 L CNN
+F 1 "0.1uF_SMD" H 5215 5105 50  0000 L CNN
+F 2 "" H 5138 5000 50  0001 C CNN
+F 3 "~" H 5100 5150 50  0001 C CNN
+	1    5100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5000 5100 4950
+Wire Wire Line
+	5100 4950 5800 4950
+Connection ~ 5800 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5E7E10D1
+P 5100 5300
+F 0 "#PWR?" H 5100 5050 50  0001 C CNN
+F 1 "GND" H 5105 5127 50  0000 C CNN
+F 2 "" H 5100 5300 50  0001 C CNN
+F 3 "" H 5100 5300 50  0001 C CNN
+	1    5100 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E7E1419
+P 6350 5300
+F 0 "#PWR?" H 6350 5050 50  0001 C CNN
+F 1 "GND" H 6355 5127 50  0000 C CNN
+F 2 "" H 6350 5300 50  0001 C CNN
+F 3 "" H 6350 5300 50  0001 C CNN
+	1    6350 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5300 6350 5250
+$Comp
+L Device:CP C?
+U 1 1 5E7E2D25
+P 6700 5150
+F 0 "C?" H 6818 5196 50  0000 L CNN
+F 1 "2.2uF" H 6818 5105 50  0000 L CNN
+F 2 "" H 6738 5000 50  0001 C CNN
+F 3 "~" H 6700 5150 50  0001 C CNN
+	1    6700 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4950 6700 4950
+Wire Wire Line
+	6700 4950 6700 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5E7E3A1E
+P 6700 5300
+F 0 "#PWR?" H 6700 5050 50  0001 C CNN
+F 1 "GND" H 6705 5127 50  0000 C CNN
+F 2 "" H 6700 5300 50  0001 C CNN
+F 3 "" H 6700 5300 50  0001 C CNN
+	1    6700 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR?
+U 1 1 5E7E4883
+P 6700 4950
+F 0 "#PWR?" H 6700 4800 50  0001 C CNN
+F 1 "+9V" H 6715 5123 50  0000 C CNN
+F 2 "" H 6700 4950 50  0001 C CNN
+F 3 "" H 6700 4950 50  0001 C CNN
+	1    6700 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 4950
+$Comp
+L Regulator_Switching:MC34063AP U?
+U 1 1 5E7E85DB
+P 2300 5100
+F 0 "U?" H 2300 5567 50  0000 C CNN
+F 1 "MC34063AP" H 2300 5476 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2350 4650 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MC34063A-D.PDF" H 2800 5000 50  0001 C CNN
+	1    2300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5E7EEF66
+P 900 5100
+F 0 "BT?" H 1018 5196 50  0000 L CNN
+F 1 "Battery_Cell" V 750 4900 50  0000 L CNN
+F 2 "" V 900 5160 50  0001 C CNN
+F 3 "~" V 900 5160 50  0001 C CNN
+	1    900  5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5E7F12E3
+P 1300 5050
+F 0 "C?" H 1418 5096 50  0000 L CNN
+F 1 "100uF" H 1418 5005 50  0000 L CNN
+F 2 "" H 1338 4900 50  0001 C CNN
+F 3 "~" H 1300 5050 50  0001 C CNN
+	1    1300 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4900 1300 4900
+Wire Wire Line
+	1300 4900 1900 4900
+Connection ~ 1300 4900
+$Comp
+L power:GND #PWR?
+U 1 1 5E7F6D90
+P 900 5200
+F 0 "#PWR?" H 900 4950 50  0001 C CNN
+F 1 "GND" H 905 5027 50  0000 C CNN
+F 2 "" H 900 5200 50  0001 C CNN
+F 3 "" H 900 5200 50  0001 C CNN
+	1    900  5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  5200 1300 5200
+Connection ~ 900  5200
+$Comp
+L power:GND #PWR?
+U 1 1 5E7F7B19
+P 2300 5600
+F 0 "#PWR?" H 2300 5350 50  0001 C CNN
+F 1 "GND" H 2305 5427 50  0000 C CNN
+F 2 "" H 2300 5600 50  0001 C CNN
+F 3 "" H 2300 5600 50  0001 C CNN
+	1    2300 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E7FE8CE
+P 3100 5100
+F 0 "D?" H 3100 4884 50  0000 C CNN
+F 1 "1N5818" H 3100 4975 50  0000 C CNN
+F 2 "" H 3100 5100 50  0001 C CNN
+F 3 "~" H 3100 5100 50  0001 C CNN
+	1    3100 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+9V #PWR?
+U 1 1 5E7FECF4
+P 3300 4650
+F 0 "#PWR?" H 3300 4500 50  0001 C CNN
+F 1 "+9V" H 3315 4823 50  0000 C CNN
+F 2 "" H 3300 4650 50  0001 C CNN
+F 3 "" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5E7FF235
+P 3300 5300
+F 0 "C?" H 3418 5346 50  0000 L CNN
+F 1 "CP" H 3418 5255 50  0000 L CNN
+F 2 "" H 3338 5150 50  0001 C CNN
+F 3 "~" H 3300 5300 50  0001 C CNN
+	1    3300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E7FF5CA
+P 3300 5450
+F 0 "#PWR?" H 3300 5200 50  0001 C CNN
+F 1 "GND" H 3305 5277 50  0000 C CNN
+F 2 "" H 3300 5450 50  0001 C CNN
+F 3 "" H 3300 5450 50  0001 C CNN
+	1    3300 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5100 3300 5100
+Wire Wire Line
+	3300 5100 3300 5050
+Wire Wire Line
+	3300 5100 3300 5150
+Connection ~ 3300 5100
+Wire Wire Line
+	2700 5100 2950 5100
+$Sheet
+S 4900 3150 1000 650 
+U 5E7D3582
+F0 "audio-rf" 50
+F1 "../audio-rf/audio-rf.sch" 50
+F2 "9v" I L 4900 3500 50 
+$EndSheet
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5E7D79EE
+P 3300 4850
+F 0 "SW?" V 3254 4948 50  0000 L CNN
+F 1 "SW_SPST" V 3345 4948 50  0000 L CNN
+F 2 "" H 3300 4850 50  0001 C CNN
+F 3 "~" H 3300 4850 50  0001 C CNN
+	1    3300 4850
+	0    1    1    0   
+$EndComp
+Text Notes 1600 5650 0    50   ~ 0
+TODO
+$EndSCHEMATC

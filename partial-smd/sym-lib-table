@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name all-band-receiver-rescue)(type Legacy)(uri ${KIPRJMOD}/all-band-receiver-rescue.lib)(options "")(descr ""))
+  (lib (name audio-rf-rescue)(type Legacy)(uri /home/adam/hardware/all-band-receiver/audio-rf/audio-rf-rescue.lib)(options "")(descr ""))
+)
