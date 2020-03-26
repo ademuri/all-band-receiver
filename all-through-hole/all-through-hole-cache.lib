@@ -27,6 +27,31 @@ X GAIN 8 100 -300 250 U 50 20 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Connector_Conn_Coaxial
+#
+DEF Connector_Conn_Coaxial J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "Connector_Conn_Coaxial" 115 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Generic_Conn_01x01
 #
 DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
@@ -41,20 +66,6 @@ DRAW
 S -50 5 0 -5 1 1 6 N
 S -50 50 50 -50 1 1 10 f
 X Pin_1 1 -200 0 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Antenna
-#
-DEF Device_Antenna AE 0 40 N N 1 F N
-F0 "AE" -75 75 50 H V R CNN
-F1 "Device_Antenna" -75 0 50 H V R CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 10 0 100 0 -150 N
-P 3 0 1 10 50 100 0 -100 -50 100 N
-X A 1 0 -200 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -240,7 +251,7 @@ ENDDEF
 DEF Homebrew_USB_LIPO_CHARGER A 0 40 Y Y 1 F N
 F0 "A" 0 300 50 H V C CNN
 F1 "Homebrew_USB_LIPO_CHARGER" 0 400 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
+F2 "homebrew:USB_LIPO_CHARGER_TP4056" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 S -200 200 50 -200 0 1 0 N
