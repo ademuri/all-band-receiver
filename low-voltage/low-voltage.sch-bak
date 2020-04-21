@@ -1,7 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:low-voltage-cache
-LIBS:all-through-hole-cache
-LIBS:audio-rf-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -500,7 +498,7 @@ U 1 1 5E96831C
 P 2250 4000
 F 0 "BT1" H 2358 4046 50  0000 L CNN
 F 1 "Battery" H 2358 3955 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_2479_3xAAA" V 2250 4060 50  0001 C CNN
+F 2 "homebrew:BatteryHolder_Keystone_2481_4xAAA" V 2250 4060 50  0001 C CNN
 F 3 "~" V 2250 4060 50  0001 C CNN
 	1    2250 4000
 	1    0    0    -1  
@@ -859,22 +857,6 @@ F 3 "" H 6450 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6450 800 
-$Comp
-L Connector_Generic:Conn_01x01 J?
-U 1 1 5EA1A84F
-P 4750 1600
-AR Path="/5E7D3582/5EA1A84F" Ref="J?"  Part="1" 
-AR Path="/5EA1A84F" Ref="J?"  Part="1" 
-F 0 "J?" V 4668 1680 50  0000 L CNN
-F 1 "Conn_01x01" V 4713 1680 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4750 1600 50  0001 C CNN
-F 3 "~" H 4750 1600 50  0001 C CNN
-	1    4750 1600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	4700 1800 4750 1800
-Connection ~ 4750 1800
-Wire Wire Line
-	4750 1800 4800 1800
+	4700 1800 4800 1800
 $EndSCHEMATC
