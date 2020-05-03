@@ -1,13 +1,11 @@
 # All-band receiver
 
-PCB for the audio amplifier IC-version of the [Techlib Amazing All-Band Receiver](http://www.techlib.com/electronics/allband.htm).
+This is a PCB for the audio amplifier IC version of the [Techlib Amazing All-Band Receiver](http://www.techlib.com/electronics/allband.htm). It is a device that makes the normally-invisible world of RF audible.
 
 "This is not an officially supported Google product"
 
-## Calculations
+## Versions
 
-### SMPS
+The latest and greatest version is in [low-voltage](low-voltage). This version is powered by 4xAAA, and is relatively simple. This is the one you want to build.
 
-[MC34063E datasheet](https://www.st.com/content/ccc/resource/technical/document/datasheet/03/f9/c4/3d/7f/eb/4c/5e/CD00001232.pdf/files/CD00001232.pdf/jcr:content/translations/en.CD00001232.pdf).
-
-See [this spreadsheet](https://docs.google.com/spreadsheets/d/1bI1ji2cqRZOHry-sRMiwu6rac16mRRAA83aerXQkJmg/edit?usp=sharing).
+[all-through-hole](all-through-hole) and [audio-rf](audio-rf) contain the previous (overengineered) version, which was powered by a single 18650 lithium-ion battery. It used a boost converter followed by a linear regulator to step the battery voltage up to 9v. This is overkill, and also caused noise issues.
