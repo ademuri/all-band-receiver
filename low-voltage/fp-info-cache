@@ -1,4 +1,4 @@
-3393564029696045
+3393564043904045
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -38171,16 +38171,16 @@ SparkFun-Connectors
 40
 40
 SparkFun-Connectors
-2X3
-
-
+2X03
+PIN HEADER
+PIN HEADER
 0
 6
 6
 SparkFun-Connectors
-2X03
-PIN HEADER
-PIN HEADER
+2X3
+
+
 0
 6
 6
@@ -40145,13 +40145,6 @@ SO08WIDE
 8
 8
 SparkFun-DigitalIC
-SO014
-
-
-0
-14
-14
-SparkFun-DigitalIC
 SO14
 
 
@@ -40159,16 +40152,23 @@ SO14
 14
 14
 SparkFun-DigitalIC
-SO016
+SO014
 
 
 0
-16
-16
+14
+14
 SparkFun-DigitalIC
 SO16
 SMALL OUTLINE PACKAGE 150 MIL
 SMALL OUTLINE PACKAGE 150 MIL
+0
+16
+16
+SparkFun-DigitalIC
+SO016
+
+
 0
 16
 16
@@ -45962,14 +45962,14 @@ SFE_LOGO_FLAME_.4
 0
 0
 Sparkfun-Aesthetics
-SFE_LOGO_FLAME_.5
+SFE_LOGO_FLAME_.05
 
 
 0
 0
 0
 Sparkfun-Aesthetics
-SFE_LOGO_FLAME_.05
+SFE_LOGO_FLAME_.5
 
 
 0
